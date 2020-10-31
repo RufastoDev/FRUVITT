@@ -1,1 +1,193 @@
-Hola Mundo
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/estilos.css">
+
+    <title>FRUVER</title>
+</head>
+<body>
+    <!-- Menu principal -->
+    <header class="menu-main container">
+        <div class="logo">
+            <img src="/imagenes/logo-recortado.jpg" alt="">
+        </div>
+
+        <div class="navigation">
+            <ul id="nav">
+                <li class="bar-data nosotros"><a href="#about">Nosotros</a></li>
+                <li class="bar-data productos"><a href="#">Producto</a></li>
+                <li class="bar-data comprar"><a href="#comprar">Comprar</a></li>
+                <li class="bar-data contacto"><a href="#socialMedia">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="burgerKing"><i class="fas fa-bars"></i></div>
+        
+    </header>
+    <div class="bxslider">
+        <div><img src="/imagenes/slide01-nueva.png" width="100%"></div>
+        <div><img src="/imagenes/slide04.png" width="100%"></div>
+        <div><img src="/imagenes/slide03.png" width="100%"></div>
+    </div>
+    <section>
+        <div class="about-container" id="about">
+            <h3>NOSOTROS</h3>
+            <p class="information">
+                Somos una nueva empresa exportadora peruana, en el mercado de productos <br>
+                naturales, orgánicos, altamente nutritivos  y sobre todo con sostenibilidad ambiental. <br> Todos estos aspectos
+                son los que caracterizan a nuestra deliciosa mermelada de arándanos.
+            </p>
+        </div>
+    </section>
+    
+    <h4 class="segundoh4"> ¿Porqué elegir Mermelada FRUVIT?</h4>
+    <div class="beneficios">
+        <div><img src="/imagenes/beneficio01.png" alt="" width="120px">
+            <p>100% NATURAL <br> No utilizamos aditivos</p></div>
+
+        <div><img src="/imagenes/beneficio02.png" alt="" width="120px">
+            <p>Envases ecoamigables <br> y reutilizables </p></div>
+        <div><img src="/imagenes/beneficio03.png" alt="" width="120px"><p>Altamente Saludable </p></div>
+
+    </div>
+    <br>
+
+    <section class="tabs">
+        <div class="info-container">
+            <div id="tab-1" class="tab-item tab-border">
+                <div class="texto-info hide-sm">Informacion nutricional</div>
+                <i class="fas fa-sort-down"></i>
+            </div>
+            <div id="tab-2" class="tab-item">
+                <div class="texto-info hide-sm">Informacion Adicional</div>
+                <i class="fas fa-sort-down"></i>
+            </div>
+            <div id="tab-3" class="tab-item">
+                <div class="texto-info hide-sm">Certificaciones</div>
+                <i class="fas fa-sort-down"></i>
+            </div>
+    
+        </div>
+    </section>
+    <section class="tab-content">
+        <div class="container-3">
+            <div class="" id="tab-1-content" class="tab-content-item show">
+                <div class="tab-1-content-inner">
+                    <img src="/imagenes/info-1-nutricional.jpg" alt="tabla-nutricional">
+                    <p><strong>(*)</strong> Elaborado con 71 gramos de fruta por cada 100gramos <br><strong>(*)</strong> Contenido total de azúcares 44.84 gramos por 100gr. <br><strong>(*)</strong> Contenido Neto 150gr.
+                    </p>
+                </div>
+            </div>
+            
+            <div id="tab-2-content" class="tab-content-item">
+                <div class="tab-2-content-top">
+                    <table>
+                        <tr>
+                            <td>Fabricante</td>
+                            <td>Fruvit S.A.C.</td>
+                        </tr>
+                        <tr>
+                            <td>Dirección</td>
+                            <td>Av.El Progreso 723, Chiclayo, Perú</td>
+                        </tr>
+                        <tr>
+                            <td>Código certificado</td>
+                            <td><img src="/imagenes/codigo-barra.jpg" alt="" width="120px"></td>
+                        </tr>
+                        <tr>
+                            <td>Precio sugerido</td>
+                            <td>1.93 euros</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="tab-3-content" class="tab-content-item">
+                <p class="title-text">"Certificaciones que garantizan la calidad de nuestro producto"</p>
+                <div class="tab-3-content-bottom">
+                    <div>
+                        <img src="/imagenes/global-gap-frutas.png" alt="Global-Gap" width="180px">
+                    </div>
+                    <div>
+                        <img src="/imagenes/CEE-organico.jpg" alt="" width="180px">
+                    </div>
+                    <div>
+                        <img src="/imagenes/AMBIENTAL.png" alt="" width="180px">
+                    </div>
+                </div>
+            </div>
+
+             
+        </div>
+    </section>
+
+    <!---SUPERMERCADOS ----->
+    <section class="tabs">
+        <h5>Puntos  de  Venta</h5>
+        <div class="container-4" id="comprar">
+            <div class="super">
+                <p>Ciudad de Madrid:<br>Super Carrefour</p>
+                <a href="https://www.carrefour.es/"><img src="/imagenes/carrefour.png" alt="" width="200px"></a>
+            </div>
+            <div class="super">
+                <p>Ciudad de Barcelona:<br>Super Alcampo</p>
+                <a href="https://www.alcampo.es/compra-online/"><img src="/imagenes/alcampo-logo-png-transparent.png" alt="" width="200px"></a>
+            </div>
+            <div class="super">
+                <p>Ciudad de Valencia:<br>Super Mercadona</p>
+                <a href="https://www.mercadona.es/"><img src="/imagenes/mercadona.png" alt="" width="200px" class="mercadona"></a>
+            </div>
+        </div>
+    </section>
+    <!----REDES SOCIALES------->
+    <div class="container social" id="socialMedia">
+        <div class="texto-social">Visita nuestras redes sociales</div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/mermeladasFruvit/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/mermeladafruvit/"><i class="fab fa-instagram" style="color: #8b387e;"></i></a>
+            <a href="https://www.pinterest.es/fruvitspain/"><i class="fab fa-pinterest" style="color: red;"></i></a>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div>
+            <h6>Atención al Cliente</h6>
+            <div class="sub texto-footer">
+                <i class="fas fa-phone-square"></i>
+                Alo Fruvit 0 900 11900
+            </div>
+            <div class="sub numero-footer">
+                De Lunes a Sábado de 9:00 am a 8:00 pm
+            </div>
+        </div>
+        <div>
+            <h6>Centros de Atención</h6>
+            <div class="sub ambiental">
+                Calle Belmonte De Tajo 76, 28019, Madrid - España
+            </div>
+            <div class="sub ambiental">
+                
+            </div>
+        </div>
+        <div>
+            <h6>Ventas Internacionales</h6>
+            <div class="sub tiendas">
+                <i class="fas fa-envelope-square"></i>
+                info@fruvitperu.com
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./animation.js"></script>
+
+    
+</body>
+</html>
