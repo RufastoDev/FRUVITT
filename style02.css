@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton&display=swap');
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+header.menu-main.container{
+    background: #DEF1F7;
+    box-shadow: 0 4px;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+.menu-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-main .logo img{
+    width: 50%;
+    cursor: pointer;
+}
+.menu-main .burgerKing{
+    display: none;
+}
+.menu-main .burgerKing i{
+    font-size: 35px;
+}
+div.bx-wrapper{
+    margin: 0 auto;
+    top: 20px;
+}
+#nav{
+    height: 50px;
+    text-align: center;
+    margin: 0px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar-data{
+    display: inline-block;
+}
+.bar-data a{
+    padding: 0px 16px;
+    font-size: 18px;
+    font-family: 'Acme', sans-serif;
+    font-weight: 600;
+    color: #323236;
+    height: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-bottom: none;  
+}
+.bar-data a:hover{
+    text-decoration: none;
+    color: whitesmoke;
+    background:  #323236e8;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.38);
+    padding: 8px 13.5px;
+    transition: 0;
+    z-index: 1;
+    border-radius: 3px;
+}
+
+div.about-container{
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 55px;
+
+}
+
+.about-container h3{
+    margin: 0 0 -3rem;
+    padding-top: 10px;
+    font-size: 25px;
+    font-family: 'Acme', sans-serif;
+    font-weight: 700;
+    margin: 0 0 2rem;
+    margin-top: 1%;
+}
+.about-container p{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 20px;
+    line-height: 1.25;
+    margin: 0 0 3rem;
+}
+
+
+.beneficios{
+    display: flex;
+    justify-content: center;
+}
+.beneficios > div{
+    margin: 10px;
+    padding: 20px;
+    font-size: 15px;
+
+}
+h4{
+    margin-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Acme', sans-serif;
+}
+
+.beneficios div p{
+    font-size: 19px;
+    font-weight: 600;
+    color: black;
+    
+}
+/* HIDE CONTENT */
+#tab-1-content,
+#tab-2-content,
+#tab-3-content{
+    display: none;
+    opacity: 0;
+}
+.show{
+    display: block !important;
+    opacity: 1 !important;
+    transition: all 1000 ease-in;
+}
+
+@media only screen and (max-width:768px){
+    .navigation{
+        display: none;
+    }
+    .menu-main .burgerKing{
+        display: block;
+    }
+    .producto{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,1fr);
+    }
+    .beneficios{
+        display: block;
+        text-align: center;
+    }
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto-social{
+    font-size: 22px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 600;
+}
+.social-media{
+    font-size: 34px;
+    cursor: pointer;
+    margin: 30px;
+}
+.social-media i{
+    padding: 10px;
+}
+.social-media a i:nth-child(1){
+    color: #0d7ed4;
+    transition: transform .2s;
+}
+.social-media a i:nth-child(2){
+    transition: transform .2s;
+}
+.social-media a i:nth-child(3){
+    transition: transform .2s;
+}
+.social-media i:nth-child(1):hover{
+    transform: scale(1.4);
+}
+.social-media i:nth-child(2):hover{
+    transform: scale(1.4);
+}
+.social-media i:nth-child(3):hover{
+    transform: scale(1.4);
+}
+/* DIVISION INFORMATIVA */
+.tabs{
+    background:#DEF1F7;
+    padding-top: 1rem;
+}
+.tabs .info-container{
+    max-width: 70%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 3rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+div.info-container div.tab-item{
+    text-align: center;
+}
+div.tab-item div.texto-info{
+    font-size: 19px;
+    font-weight: 650;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1e2327;
+}
+div.tab-item div.texto-info:hover{
+    cursor: pointer;
+    color: #414441;
+}
+div.tab-item i{
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.tab-border{
+    border-bottom: 4px solid #6f2dbd;
+
+}
+#tab-1-content .tab-1-content-inner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-3{
+    max-width: 70%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+.tab-1-content-inner img{
+    padding-inline-start: 40px;
+}
+.tab-1-content-inner p{
+    font-size: 17px;
+    
+}
+div.container-4{
+    display: flex;
+    justify-content: center;
+}
+div.super{
+    padding: 40px;
+    margin-bottom: 25px;
+    position: relative;
+    text-align: center;
+}
+div.super p{
+    font-size: 19px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1e2327;
+
+}
+h5{
+    padding-top: 20px;
+    margin: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Acme', sans-serif;
+}
+div.super img.mercadona{
+    padding-top: 16px;
+}
+footer{
+    background-color: #393e41;
+    color: white;
+}
+footer.footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+footer div{
+    margin-bottom: 20px;
+    width: 90%;
+}
+footer div.sub i{
+    font-size: 25px;
+    color: whitesmoke;
+}
+h6{
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    font-style: normal;
+}
+div.sub{
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    text-decoration: underline;
+    transition: all 0.3s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+div.sub:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+table{
+    border-spacing: 25px 25px;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+td{
+    padding: 17px;
+    font-size: 17px;
+    font-weight: 600;
+}
+#tab-3-content{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+#tab-3-content .tab-3-content-bottom{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.title-text{
+    padding-top: 20px;
+    margin: 0 auto;
+    text-align: center;
+    height: auto;
+    font-size: 20px;
+    font-style: italic;
+}
