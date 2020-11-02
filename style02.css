@@ -100,7 +100,74 @@ div.about-container{
     line-height: 1.25;
     margin: 0 0 3rem;
 }
-
+.contenedor{
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background: #dbe7e4c4;
+    transform-style: preserve-3d;
+    min-height: 71vh;
+    width: 30rem;
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+div.product-jan{
+    min-height: 18vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+div.product-jan img{
+    width: 17rem;
+    z-index: 1;
+    transition: all 0.75s ease-out;
+}
+.informacion-detalle h1{
+    font-size: 1.7rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    color: #293241;
+}
+.informacion-detalle p{
+    font-size: 1rem;
+    font-family:'Noto Sans KR', sans-serif;
+    font-weight: lighter;
+    padding: 0rem 0.9rem;
+    text-align: center;
+}
+.btn-buy{
+    margin-top: 1.5rem;
+    transition: all 0.75s ease-out;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0.8rem 0rem;
+}
+.btn-buy button{
+    width: 100%;
+    padding: 1rem 0rem;
+    border: none;
+    color:whitesmoke;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    background: linear-gradient(to right, #9D50BB 0%, #6E48AA  51%, #9D50BB  100%);
+    text-transform: uppercase;
+    box-shadow: 0 0 20px #eee;
+}
+.btn-buy button:hover{
+    background: linear-gradient(to left, #9D50BB 100%, #6E48AA  0%, #9D50BB  100%);
+    text-decoration: none;
+    border: 2px solid whitesmoke;
+}
 
 .beneficios{
     display: flex;
@@ -144,18 +211,24 @@ h4{
     .navigation{
         display: none;
     }
-    .menu-main .burgerKing{
+    .burgerKing{
         display: block;
+        font-size: 20px;
     }
-    .producto{
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(1,1fr);
+
+    div.container-4{
+        flex-direction: column;
     }
     .beneficios{
         display: block;
         text-align: center;
     }
+    section.tabs div.info-container{
+        display: block;
+    }
 }
+
+
 .social{
     display: flex;
     justify-content: center;
